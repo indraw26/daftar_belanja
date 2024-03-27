@@ -49,6 +49,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '796449605451',
     projectId: 'first-app-98ad4',
     authDomain: 'first-app-98ad4.firebaseapp.com',
+    databaseURL: 'https://first-app-98ad4-default-rtdb.firebaseio.com',
     storageBucket: 'first-app-98ad4.appspot.com',
     measurementId: 'G-YZ3CCMKNS3',
   );
@@ -58,6 +59,7 @@ class DefaultFirebaseOptions {
     appId: '1:796449605451:android:91f013cedb3f13426f8ace',
     messagingSenderId: '796449605451',
     projectId: 'first-app-98ad4',
+    databaseURL: 'https://first-app-98ad4-default-rtdb.firebaseio.com',
     storageBucket: 'first-app-98ad4.appspot.com',
   );
 
@@ -66,6 +68,7 @@ class DefaultFirebaseOptions {
     appId: '1:796449605451:ios:d78a0d0ec61213d56f8ace',
     messagingSenderId: '796449605451',
     projectId: 'first-app-98ad4',
+    databaseURL: 'https://first-app-98ad4-default-rtdb.firebaseio.com',
     storageBucket: 'first-app-98ad4.appspot.com',
     iosBundleId: 'com.example.daftarbelanja',
   );
@@ -75,6 +78,7 @@ class DefaultFirebaseOptions {
     appId: '1:796449605451:ios:1d656e0c86d131df6f8ace',
     messagingSenderId: '796449605451',
     projectId: 'first-app-98ad4',
+    databaseURL: 'https://first-app-98ad4-default-rtdb.firebaseio.com',
     storageBucket: 'first-app-98ad4.appspot.com',
     iosBundleId: 'com.example.daftarbelanja.RunnerTests',
   );

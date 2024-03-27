@@ -11,6 +11,7 @@ class ShoppingListScreen extends StatefulWidget {
 class _ShoppingListScreenState extends State<ShoppingListScreen> {
   final TextEditingController _controller = TextEditingController();
   final ShoppingService _shoppingService = ShoppingService();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,6 +20,7 @@ class _ShoppingListScreenState extends State<ShoppingListScreen> {
       ),
       body: Column(
         children: [
+          //Child yang pertama
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Row(
@@ -27,13 +29,15 @@ class _ShoppingListScreenState extends State<ShoppingListScreen> {
                     child: TextField(
                   controller: _controller,
                   decoration:
-                      const InputDecoration(hintText: "Masukkan Nama Barang"),
+                      const InputDecoration(hintText: 'Masukkan nama barang'),
                 )),
                 IconButton(
-                    onPressed: () {
-                      _shoppingService.addShoppingItem(_controller.text);
-                    },
-                    icon: Icon(Icons.add))
+                  icon: const Icon(Icons.add),
+                  onPressed: () {
+                    _shoppingService.addShoppingItem(_controller.text);
+                    _controller.clear();
+                  },
+                )
               ],
             ),
           )
